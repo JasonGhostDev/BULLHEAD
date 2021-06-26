@@ -8,16 +8,12 @@
 }
 
 
-.home{
-  background-color: #121317;
+
+.reports{
+  background-color: red;
   min-height:90vh;
   width:100%;
 }
-.reports{
-  background-color: #121317;
-  min-height:90vh;
-  width:100%;
-},
 .products {
   display: flex;
   height: 90vh;

@@ -16,3 +16,206 @@
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(1,1,1,0.0001);
   }
+
+  .home{
+    background-color:  #0c71c3 ;
+    min-height: 90vh;
+    height: auto;
+    width:100%;
+    padding: 0 0  0 250px;
+  }
+  .home-wrapper{
+      
+      width: 100%;
+      padding: 0 20px;
+  }
+  .info{
+      width: 100%;
+      padding:10px 10px;
+      display: flex;
+      background-color:#b8b8b8;
+      border-radius: 5px;
+      color:black;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+  }
+  .heading{
+    font-size: 25px;
+    color:white;
+    padding-top: 15px;
+    text-align: center;
+
+  }
+  .image-upper{
+      height: 50px;
+      padding-right: 10px;
+  }
+  .wrapper-2{
+      display: flex;
+      justify-content: space-between;
+  }
+  .wrapper-box{
+      display: flex;
+      background-color: #071e47;
+      padding: 15px;
+      border-radius: 7px;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .font-color-grey{
+      color: rgb(126, 126, 126);
+  }
+  .font-color-white{
+      color:white;
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    .wrapper-3{
+        
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #071e47;
+        padding: 10px ;
+        border-radius: 7px;
+        margin-top: 20px;
+    }
+    .box-wrapper-2{
+        padding: 10px 14%;
+        background-color:#b8b8b8;
+        border-radius: 7px;
+        color:black;
+        font-size: 15px;
+    }
+    .box-wrapper-3{
+        padding: 10px 14%;
+        background-color:#b8b8b8;
+        border-radius: 7px;
+        color:black;
+        font-size: 15px;
+
+    }
+    .wrapper-4{
+        padding: 20px;
+        background-color: #071e47;
+        margin-top: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-bnb{
+        height: 200px;
+    }
+    .text-big-yellow{
+        font-size: 4rem;
+        color: #faca15;
+    }
+    .text-big-green{
+        font-size:4rem;
+        color:#31c48d;
+    }
+
+    .wrapper-5{
+        padding:10px;
+        width: 100%;
+        background-color: none;
+        margin-top: 20px;
+        border-radius: 7px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .wrapper-5-new{
+        padding:10px;
+        width: 100%;
+        background-color: none;
+        border-radius: 7px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .box-wrapper-5{
+        width:48%;
+        background-color: #071e47;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:20px;
+    }
+    .money-wrapper-5{
+        height:200px;
+    }
+    .yellow-text{
+        font-size: 22px;
+        color: #faca15;
+    }
+    .green-text{
+        font-size: 22px;
+        color: #31c48d;
+    }
+    .grey-text{
+        font-size: 18px;
+        color: #838382;
+    }
+    .grey-text-new{
+        font-size: 18px;
+        color: #838382;
+        margin-top: 20px;
+    }
+    .margin-wrapper-5{
+        margin-top: 15px;
+    }
+
+
+    @media screen and (max-width: 1166px) {
+        .home{
+            padding: 0;
+          }
+      }
+    @media screen and (max-width: 916px) {
+        .wrapper-3{
+            display: block;
+        }
+        .wrapper-2{
+            display: block;
+        }
+        .wrapper-box{
+            justify-content: space-between;
+            padding-right: 40%;
+            margin-bottom: 15px;
+        }
+        .box-wrapper-2{
+            margin-bottom: 15px;
+        }
+        .wrapper-5{
+            display: block;
+            width:100%;
+
+        }
+        .wrapper-5-new{
+            display: block;
+            width:100%;
+        }
+        .hidden-bar{
+            height:15px
+        }
+        .box-wrapper-5{
+            width:100%
+        }
+    }
+
+    @media screen and (max-width: 506px) {
+        .text-big-yellow{
+            font-size: 30px;
+        }    
+        .text-big-green{
+            font-size: 30px;
+        }
+        .text-big-grey{
+            font-size: 30px;
+        }
+    }
+    

@@ -1,11 +1,20 @@
 .navbar {
-  background-color: #1a1c23;
+  background-color: #071e47;
   height: 80px;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
+  padding-right: 30%;
 }
-
+.input-box{
+  height: 35px;
+  width:450px;
+  background-color: #071e47;
+  border-radius: 7px;
+  border: 1px solid white;
+  padding:10px 20px;
+  outline:none;
+}
 .menu-bars {
   margin-left: 2rem;
   font-size: 2rem;
@@ -13,7 +22,7 @@
 }
 
 .nav-menu {
-  background-color: #1a1c23;
+  background-color: #071e47;
   width: 250px;
   height: 100vh;
   display: flex;
@@ -23,7 +32,9 @@
   left: -100%;
   transition: 850ms;
 }
-
+.logo-final{
+  height: 80px;
+}
 .nav-menu.active {
   left: 0;
   transition: 350ms;
@@ -60,7 +71,7 @@
 }
 
 .navbar-toggle {
-  background-color: #1a1c23;
+  background-color: #071e47;
   width: 100%;
   height: 80px;
   display: flex;
@@ -70,4 +81,17 @@
 
 span {
   margin-left: 16px;
+}
+@media screen and (max-width: 896px) {
+  .navbar{
+    padding-right: 15%;
+  }
+  .input-box{
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 896px) {
+  .navbar{
+    padding-right: 5%;
+  }
 }
