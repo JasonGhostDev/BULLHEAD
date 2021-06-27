@@ -8,7 +8,7 @@ import image4 from '../images/4.png';
 import bnb from '../images/bnb2.png';
 import money from '../images/money.png';
 
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function Home() {
   return (
     <div className='home'>

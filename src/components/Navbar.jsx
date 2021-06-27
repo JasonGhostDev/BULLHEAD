@@ -10,7 +10,7 @@ import { IconContext } from 'react-icons';
 import logo from '../images/logo.png'
 import ConectWallet from "./conectWallet";
 import Wallet from "../assets/walletSmall.svg";
-function Navbar() {
+const Navbar = () =>  {
   const [sidebar, setSidebar] = useState(true);
   const [userAccount, setUserAccount] = useState(null);
   const [modalShow, setModalShow] = useState(false);
@@ -51,15 +51,23 @@ function Navbar() {
     localStorage.removeItem("account");
     localStorage.removeItem("walletProvider");
   }
+  useEffect(() => {
+    if (account) {
+      setUserAccount(account);
+      localStorage.setItem("account", account);
+    }
+  }, [account]);
+
+ 
   let width = window.innerWidth;
   return (
-    <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+ 
+    <IconContext.Provider value={{ color: '#fff' }}>
         <div className='navbar'>
           <Link to='#' className='menu-bars'>
             <img className="logo-final" src={logo} onClick={showSidebar} />
           </Link>
-          <input placeholder="Paste your adress here " className="input-box" type="text"></input>
+          <div className="wallet-connect-box">
           {!userAccount ? (
               <Button
                 variant="light"
@@ -75,8 +83,11 @@ function Navbar() {
                   className="btn_white"
                   id="dropdown-basic"
                 >
-                  <img alt="address" src={Wallet} className="mr-1" />
-                  {formatAddress(userAccount)}
+                  <div className="wallet-box">
+                    <img alt="address" src={Wallet} className="mr-1" />
+                    {formatAddress(userAccount)}
+                  </div>
+                  
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
@@ -86,12 +97,14 @@ function Navbar() {
                 </Dropdown.Menu>
               </Dropdown>
             )}
+            </div>
             <ConectWallet
               show={modalShow}
               onHide={() => setModalShow(false)}
               onChangeWallet={onChangeWallet}
              
             />
+
         </div>
         
         <nav className={sidebar && width>400?'nav-menu active':'nav-menu' }>
@@ -116,10 +129,7 @@ function Navbar() {
           
           
         </nav>
-        
-        
-      </IconContext.Provider>
-    </>
+        </IconContext.Provider>
   );
 }
 
